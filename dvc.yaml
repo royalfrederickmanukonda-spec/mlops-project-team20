@@ -7,11 +7,11 @@ stages:
     outs:
     - data/processed
   train:
-    cmd: python src/train.py --train data/processed/train.csv --test 
-      data/processed/test.csv
+    cmd: python src/train.py --train data/processed/train.csv --test data/processed/test.csv
     deps:
-    - data/processed/test.csv
-    - data/processed/train.csv
-    - src/train.py
+      - src/train.py
+      - data/processed/train.csv
+      - data/processed/test.csv
     outs:
-    - mlruns
+      - models
+

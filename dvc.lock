@@ -9,8 +9,8 @@ stages:
       size: 56993
     - path: src/data_prep.py
       hash: md5
-      md5: 5bcee2cd581c1c7663656347b9f3c6be
-      size: 1000
+      md5: 46037720af81f778149f37fa1f443825
+      size: 1072
     outs:
     - path: data/processed
       hash: md5
@@ -31,11 +31,11 @@ stages:
       size: 57886
     - path: src/train.py
       hash: md5
-      md5: 6246ee0960f00388ad268bdad5c63e5e
-      size: 1925
+      md5: 64580aafe2f06daedc7b66dd9cefa594
+      size: 1928
     outs:
-    - path: mlruns
+    - path: models
       hash: md5
-      md5: be659906a6711e9ceb56f244bad59f72.dir
-      size: 1248058
-      nfiles: 30
+      md5: d751713988987e9331980363e24189ce.dir
+      size: 0
+      nfiles: 0
