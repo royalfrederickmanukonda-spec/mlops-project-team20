@@ -1,0 +1,13 @@
+pandas
+scikit-learn
+mlflow
+dvc
+prefect
+fastapi
+uvicorn
+pydantic
+evidently
+docker
+pytest
+joblib
+python-dotenv

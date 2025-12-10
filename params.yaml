@@ -1,0 +1,31 @@
+# Parameters for Data Preprocessing
+preprocess:
+  test_size: 0.2
+  random_state: 42
+  drop_na: true
+  encoding: onehot   # options: onehot, label
+  scaling: none      # options: standard, minmax, none
+
+# Parameters for Model Training
+train:
+  model_type: RandomForest
+  n_estimators: 100
+  max_depth: null
+  random_state: 42
+
+# Paths
+paths:
+  raw_data: data/raw/dataset.csv
+  processed_train: data/processed/train.csv
+  processed_test: data/processed/test.csv
+  model_dir: models/
+  model_file: models/model.joblib
+
+# Evaluation parameters
+evaluation:
+  average: weighted
+  zero_division: 0
+
+# Prediction settings
+predict:
+  batch_mode: true  # true = accept list of samples
