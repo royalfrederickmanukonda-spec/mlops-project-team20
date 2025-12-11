@@ -2,11 +2,10 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import pandas as pd
-from config import MODEL_DIR
 
 app = FastAPI()
-
-MODEL_PATH = MODEL_DIR / "model.joblib"
+MODEL_DIR = "C:/Users/Royal/mlops-project-team20/models"
+MODEL_PATH = MODEL_DIR + "/model.joblib"
 
 class InputData(BaseModel):
     data: list  # list of feature lists or dicts depending on implementation

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Royal/mlops-project-team20/mlruns/0/d5c7cd07320d4f9bb1813786c2a67d38/artifacts
+end_time: 1765351714268
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5c7cd07320d4f9bb1813786c2a67d38
+run_name: traveling-lamb-52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765351700640
+status: 3
+tags: []
+user_id: prasuna

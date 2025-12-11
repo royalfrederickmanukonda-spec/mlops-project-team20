@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Royal/mlops-project-team20/mlruns/0/cb58bf1189314fbeabeabd8fd0a97d6d/artifacts
+end_time: 1765351700609
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cb58bf1189314fbeabeabd8fd0a97d6d
+run_name: MLOPS Project Team 20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765351700354
+status: 3
+tags: []
+user_id: prasuna

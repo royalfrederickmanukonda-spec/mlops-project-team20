@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Royal/mlops-project-team20/mlruns/0/e0f4c82b2d344429813c00db420c17b3/artifacts
+end_time: 1765352514564
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e0f4c82b2d344429813c00db420c17b3
+run_name: burly-kit-817
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765352488279
+status: 3
+tags: []
+user_id: prasuna

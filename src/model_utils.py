@@ -2,7 +2,7 @@ import joblib
 from pathlib import Path
 from sklearn.metrics import accuracy_score, classification_report
 from config import MODEL_DIR
-
+MODEL_DIR = Path(MODEL_DIR)
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
 def save_model(model, name="model.joblib"):

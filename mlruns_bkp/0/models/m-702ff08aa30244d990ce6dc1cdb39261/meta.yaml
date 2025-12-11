@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Royal/mlops-project-team20/mlruns/0/models/m-702ff08aa30244d990ce6dc1cdb39261/artifacts
+creation_timestamp: 1765352488841
+experiment_id: '0'
+last_updated_timestamp: 1765352514492
+model_id: m-702ff08aa30244d990ce6dc1cdb39261
+model_type: null
+name: model
+source_run_id: e0f4c82b2d344429813c00db420c17b3
+status: 2
+status_message: null

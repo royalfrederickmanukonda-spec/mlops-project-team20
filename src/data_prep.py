@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from pathlib import Path
 
-RAW_DIR = Path("data/raw")
-PROCESSED_DIR = Path("data/processed")
+RAW_DIR = Path("C:/Users/Royal/mlops-project-team20/data/raw")
+PROCESSED_DIR = Path("C:/Users/Royal/mlops-project-team20/data/processed")
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 def load_raw(path: Path):

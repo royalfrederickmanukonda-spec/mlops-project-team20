@@ -8,15 +8,15 @@ from model_utils import save_model
 import joblib
 import argparse
 
-mlflow.set_tracking_uri(MLFLOW_URI)
+mlflow.set_tracking_uri("mlruns")
 print("Checking TRAIN:")
-train = pd.read_csv("data/processed/train.csv")
+train = pd.read_csv("C:/Users/Royal/mlops-project-team20/data/processed/train.csv")
 print(train.shape)
 print(train.head())
 
 def train(train_path, test_path, n_estimators=100, max_depth=None):
-    train = pd.read_csv("data/processed/train.csv")
-    test = pd.read_csv("data/processed/test.csv")
+    train = pd.read_csv("C:/Users/Royal/mlops-project-team20/data/processed/train.csv")
+    test = pd.read_csv("C:/Users/Royal/mlops-project-team20/data/processed/test.csv")
 
     # Example: last column is target
     X_train = train.iloc[:, :-1]
@@ -39,6 +39,12 @@ def train(train_path, test_path, n_estimators=100, max_depth=None):
         preds = model.predict(X_test)
         acc = (preds == y_test).mean()
         mlflow.log_metric("accuracy", float(acc))
+        os.makedirs("model", exist_ok=True)
+
+        with open("model/model.pkl", "wb") as f:
+            pickle.dump(model, f)
+
+        print("✅ model.pkl generated and saved in ./model/model.pkl")
 
         mlflow.sklearn.log_model(model, "model")
         print("Accuracy:", acc)
@@ -47,9 +53,11 @@ def train(train_path, test_path, n_estimators=100, max_depth=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--train", default=str(PROCESSED_DIR/"train.csv"))
-    parser.add_argument("--test", default=str(PROCESSED_DIR/"test.csv"))
+    parser.add_argument("--train", default=str(PROCESSED_DIR + "/train.csv"))
+    parser.add_argument("--test", default=str(PROCESSED_DIR +"/test.csv"))
     parser.add_argument("--n_estimators", type=int, default=100)
     parser.add_argument("--max_depth", type=int, default=None)
     args = parser.parse_args()
     train(args.train, args.test, args.n_estimators, args.max_depth)
+
+    # train_model.py
